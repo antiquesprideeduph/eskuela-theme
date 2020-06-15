@@ -33,7 +33,7 @@ $string['pluginname'] = 'EskUelA';
 $string['configtitle'] = 'EskUelA settings';
 
 // A description shown in the admin theme selector.
-$string['choosereadme'] = 'EskUelA is a modern highly-customisable child theme of Boost. This theme is utilising Bootstrap 4. For the time being, it also adds the ability to upload background photos. Additional functions will be added in the future.';
+$string['choosereadme'] = 'EskUelA is a modern highly-customisable child theme of Boost designed for University of Antique LMS. This theme is utilising Bootstrap 4. For the time being, it also adds the ability to upload background photos. Additional functions will be added in the future.';
 
 // The name of the second tab in the theme settings.
 $string['advancedsettings'] = 'Advanced settings';
