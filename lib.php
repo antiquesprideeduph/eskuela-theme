@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 // We will add callbacks here as we add features to our theme.
-function theme_photo_get_main_scss_content($theme) {
+function theme_eskuela_get_main_scss_content($theme) {
     global $CFG;
 
     $scss = '';
@@ -66,7 +66,7 @@ function theme_photo_get_main_scss_content($theme) {
  * @param $settingname
  */
 
-function theme_photo_update_settings_images($settingname) {
+function theme_eskuela_update_settings_images($settingname) {
     global $CFG;
 
     // The setting name that was updated comes as a string like 's_theme_photo_loginbackgroundimage'.

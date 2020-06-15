@@ -86,15 +86,15 @@ if ($ADMIN->fulltree) {
 
 	// Login page background setting.
     // We use variables for readability.
-    $name = 'theme_photo/loginbackgroundimage';
-    $title = get_string('loginbackgroundimage', 'theme_photo');
-    $description = get_string('loginbackgroundimage_desc', 'theme_photo');
+    $name = 'theme_eskuela/loginbackgroundimage';
+    $title = get_string('loginbackgroundimage', 'theme_eskuela');
+    $description = get_string('loginbackgroundimage_desc', 'theme_eskuela');
 
     // This creates the new setting.                                                                                                
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginbackgroundimage');
 
     // This function will copy the image into the data_root location it can be served from.
-    $setting->set_updatedcallback('theme_photo_update_settings_images');
+    $setting->set_updatedcallback('theme_eskuela_update_settings_images');
 
     // We always have to add the setting to a page for it to have any effect.
     $page->add($setting);
