@@ -74,6 +74,9 @@ $string['rawscsspre_desc'] = 'In this field you can provide initialising SCSS co
 // We need to include a lang string for each block region.
 $string['region-side-pre'] = 'Right';
 
+// The backgrounds tab name.
+$string['backgrounds'] = 'Backgrounds';
+
 // Background image for login page.                                                                                                 
 $string['loginbackgroundimage'] = 'Login page background image';
                                                                    

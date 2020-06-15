@@ -31,7 +31,7 @@ if ($ADMIN->fulltree) {
 
     // Boost provides a nice setting page which splits settings onto separate tabs. We want to use it here.
     $settings = new theme_boost_admin_settingspage_tabs('themesettingeskuela', get_string('configtitle', 'theme_eskuela'));
-
+	//--------------------------------------------------------------------------------------------------
     // Each page is a tab - the first is the "General" tab.
     $page = new admin_settingpage('theme_eskuela_general', get_string('generalsettings', 'theme_eskuela'));
 
@@ -79,7 +79,30 @@ if ($ADMIN->fulltree) {
 
     // Must add the page after definiting all the settings!
     $settings->add($page);
+	//----------------------------------------------------------------------------------
+	
+	// Each page is a tab - the second is the "Backgrounds" tab.
+	$page = new admin_settingpage('theme_eskuela_backgrounds', get_string('backgrounds', 'theme_eskuela'));
 
+	// Login page background setting.
+    // We use variables for readability.
+    $name = 'theme_eskuela/loginbackgroundimage';
+    $title = get_string('loginbackgroundimage', 'theme_eskuela');
+    $description = get_string('loginbackgroundimage_desc', 'theme_eskuela');
+	
+    // This creates the new setting.
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginbackgroundimage');
+	
+    // This means that theme caches will automatically be cleared when this setting is changed.
+    $setting->set_updatedcallback('theme_reset_all_caches');
+	
+    // We always have to add the setting to a page for it to have any effect.
+    $page->add($setting);
+	
+	$settings->add($page);
+	
+	
+	
     // Advanced settings.
     $page = new admin_settingpage('theme_eskuela_advanced', get_string('advancedsettings', 'theme_eskuela'));
 
@@ -96,19 +119,5 @@ if ($ADMIN->fulltree) {
     $page->add($setting);
 
     $settings->add($page);
-
-	// Login page background setting.
-    // We use variables for readability.
-    $name = 'theme_eskuela/loginbackgroundimage';
-    $title = get_string('loginbackgroundimage', 'theme_eskuela');
-    $description = get_string('loginbackgroundimage_desc', 'theme_eskuela');
 	
-    // This creates the new setting.
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginbackgroundimage');
-	
-    // This means that theme caches will automatically be cleared when this setting is changed.
-    $setting->set_updatedcallback('theme_reset_all_caches');
-	
-    // We always have to add the setting to a page for it to have any effect.
-    $page->add($setting);
 }
