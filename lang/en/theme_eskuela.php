@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Language file.
+ * EskUelA language file.
  *
  * @package   theme_eskuela
  * @copyright 2020 Gerard James B. Paglingayen
@@ -24,6 +24,16 @@
 
 // This line protects the file from being accessed by a URL directly.
 defined('MOODLE_INTERNAL') || die();
+
+
+// The name of our plugin.
+$string['pluginname'] = 'EskUelA';
+
+// Name of the settings pages.
+$string['configtitle'] = 'EskUelA settings';
+
+// A description shown in the admin theme selector.
+$string['choosereadme'] = 'EskUelA is a modern highly-customisable child theme of Boost. This theme is utilising Bootstrap 4. For the time being, it also adds the ability to upload background photos. Additional functions will be added in the future.';
 
 // The name of the second tab in the theme settings.
 $string['advancedsettings'] = 'Advanced settings';
@@ -34,17 +44,8 @@ $string['brandcolor'] = 'Brand colour';
 // The brand colour setting description.
 $string['brandcolor_desc'] = 'The accent colour.';
      
-// A description shown in the admin theme selector.
-$string['choosereadme'] = 'Theme eskuela is a child theme of Boost. It is a custom theme for University of Antique LMS.';
-
-// Name of the settings pages.
-$string['configtitle'] = 'Eskuela settings';
-
 // Name of the first settings tab.
 $string['generalsettings'] = 'General settings';
-
-// The name of our plugin.
-$string['pluginname'] = 'eskUelA';
 
 // Preset files setting.
 $string['presetfiles'] = 'Additional theme preset files';

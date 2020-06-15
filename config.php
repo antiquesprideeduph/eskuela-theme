@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Photo config.
+ * EskUelA config file.
  *
  * @package   theme_eskuela
  * @copyright 2020 Gerard James B. Paglingayen

@@ -15,6 +15,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
+ * EskUelA setting configurations.
+ *
  * @package   theme_eskuela
  * @copyright 2020 Gerard James B. Paglingayen
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
